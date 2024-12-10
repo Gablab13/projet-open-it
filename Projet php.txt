@@ -1,0 +1,23 @@
+Projet php
+
+Schema sql:
+
+Explications des Champs
+
+id dans chaque table :
+
+Clé primaire unique pour identifier chaque enregistrement.
+AUTO_INCREMENT facilite l'ajout de nouvelles entrées sans avoir à spécifier manuellement l'identifiant.
+username dans users :
+
+UNIQUE pour éviter les doublons d'utilisateurs.
+password dans users :
+
+Le mot de passe est stocké en clair conformément aux exigences du projet.
+user_id dans movies :
+
+Lien avec la table users pour identifier le propriétaire du film.
+La contrainte ON DELETE CASCADE garantit que si un utilisateur est supprimé, ses films le sont aussi automatiquement.
+image_path dans movies :
+
+Chemin local vers l'image associée au film.
